@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<form action="">
+		<!-- 
+			? Challenge
+			* create an endpoint called /submit
+			* the endpoint should be hit from this form
+			* once you hit send, we hit the endpoint
+			* the endpoint should respond with an html file (from static)
+			* the file should have an h1 with the following message: Email sent
+			! SPICEY MODE
+			* rewrite from inherent event to instead use fetch with index.js
+		-->
+		<input type="email" name="email" id="email" placeholder="Enter email">
+		<input type="text" name="subject" id="subject" placeholder="Enter subject">
+		<textarea name="content" id="content"></textarea>
+		<button type="submit">Send</button>
+	</form>
+	<script src="./index.js"></script>
+</body>
+</html>
