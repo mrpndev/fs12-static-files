@@ -32,6 +32,10 @@ app.get("/img", (req, res) => {
 	res.sendFile(`${__dirname}/static/mckim-sale.jpg`)
 })
 
+app.get("/submit", (req, res) => {
+	res.sendFile(`${__dirname}/static/confirmed.html`)
+})
+
 app.listen(PORT, HOST, () => {
 	console.log(`[server] listening on ${HOST}:${PORT}`)
 })
